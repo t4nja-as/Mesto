@@ -1,0 +1,42 @@
+@import url(../vendor/normalize.css);
+@import url(../fonts/fonts.css);
+@import url(../block/page/page.css);
+@import url(../block/page/__container/page__container.css);
+@import url(../block/header/header.css);
+@import url(../block/header/__logo/header__logo.css);
+@import url(../block/header/__line/header__line.css);
+@import url(../block/profile/profile.css);
+@import url(../block/profile/__info/profile__info.css);
+@import url(../block/profile/__title/pfofile__title.css);
+@import url(../block/profile/__subtitle/profile__subtitle.css);
+@import url(../block/profile/__edit-button/profile__edit-button.css);
+@import url(../block/profile/__add-button/profile__add-button.css);
+@import url(../block/profile/__avatar_image-avatar/profile__avatar_image-avatar.css);
+@import url(../block/popup/popup.css);
+@import url(../block/popup/__container/popup__container.css);
+@import url(../block/popup/__close-button/popup__close-button.css);
+@import url(../block/popup/__title/popup__title.css);
+@import url(../block/popup/__button/popup__button.css);
+@import url(../block/popup/__input/popup__input.css);
+@import url(../block/places/places.css);
+@import url(../block/places/place/place.css);
+@import url(../block/places/__desctiption/place__desctiption.css);
+@import url(../block/places/__like-ico/place__like-ico.css);
+@import url(../block/places/__name/place__name.css);
+@import url(../block/places/__pic/place__pic.css);
+@import url(../block/footer/footer.css);
+@import url(../block/footer/__content-info/footer__content-info.css);
+
+
+
+
+
+
+
+
+
+
+
+
+
+

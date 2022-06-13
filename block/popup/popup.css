@@ -1,0 +1,18 @@
+.popup {
+    position: fixed;
+    background: #FFFFFF;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 430px;
+    left: 425px;
+    top: 195px;
+    height: 330px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    visibility: hidden;
+    display: flex;
+}
+.popup_opened {
+    display: flex;
+    visibility: visible;
+}
