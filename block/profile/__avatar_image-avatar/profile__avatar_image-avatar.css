@@ -8,7 +8,6 @@
     border-radius: 50%;
     background-image: url(../../../image/Avatar.png);
     background-repeat: no-repeat;
-    background-position: center;
     object-fit: cover;
     background-color: transparent;
 }
