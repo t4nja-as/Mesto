@@ -1,20 +1,26 @@
 .profile__edit-button {
     border: 1px solid #FFFFFF;
     background-color: #000000;
-    cursor: pointer;
     width: 24px;
     height: 24px;
     padding: 0;
     box-sizing: border-box;
     margin-top: 15px;
     margin-bottom: 34px;
-    background-image: url(/./././image/Vector\ \(5\).png);
+    background-image: url(../../../image/carandash.png);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     align-self: center;
     position: absolute;
     margin-left: 314px;
 }
+
+.profile__edit-button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+
 
 @media (max-width: 767px) {
     .profile__edit-button {

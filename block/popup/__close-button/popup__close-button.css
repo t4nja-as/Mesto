@@ -11,5 +11,10 @@
     cursor: pointer;
     background-size: auto;
     top: -50px;
-    background-color: transparent;
+    border: 0;
+}
+.popup__close-button:hover  {
+    opacity: 0.6;
+    cursor: pointer;
+
 }

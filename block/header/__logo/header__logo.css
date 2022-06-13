@@ -1,6 +1,13 @@
 .header__logo {
     width: 100%;
     max-width: 142px;
+    background: #000000;
+}
+
+.header__logo:hover {
+    cursor: pointer;
+    background: #FFFFFF;
+
 }
 
 @media (max-width: 320px) {

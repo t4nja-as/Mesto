@@ -6,7 +6,7 @@
     background-size: cover;
     background-position: center;
     border-radius: 50%;
-    background-image: url(..\..\..\image\Avatar.png);
+    background-image: url(../../../image/Avatar.png);
     background-repeat: no-repeat;
     background-position: center;
     object-fit: cover;
