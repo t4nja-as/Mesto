@@ -6,12 +6,13 @@
     max-width: 150px;
     align-self: center;
     margin-left: auto;
-    background-image: url(../../../image/плюсик.png);
+    background-image: url(../../../image/Vector.svg);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     box-sizing: border-box;
     border-radius: 2px;
     background-color: transparent;
+    background-size: 22px 22px;
 
 }
 
