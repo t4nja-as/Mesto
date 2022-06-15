@@ -6,12 +6,12 @@
     padding: 0;
     margin-left: 18px;
     box-sizing: border-box;
-    background-image: url(../../../image/carandash.png);
+    background-image: url(../../../image/carandash.svg);
     background-repeat: no-repeat;
     align-self: center;
     background-color: transparent;
     background-position: center;
-
+    background-size: 10px 10px;
 }
 
 .profile__edit-button:hover {
