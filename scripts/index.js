@@ -14,7 +14,7 @@ function openPopup(event) {
 function closePopup(event) {
     popup.classList.remove('popup_opened');
 }
-console.log(profileEditButton);
+
 
 
 
@@ -35,7 +35,7 @@ function formSubmitHandler(evt) {
 
 };
 
-function closeEditForm() { }
+
 formElement.addEventListener('submit', formSubmitHandler);
 
 

@@ -1,0 +1,19 @@
+.place__like-ico {
+    width: 22px;
+    height: 19px;
+    background-image: url(/image/сердце.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    border: 0;
+    margin-right: 15px;
+    margin-top: 25px;
+    background-position: 50%;
+    background-size: contain;
+    background-color: transparent;
+}
+
+.place__like-ico:hover {
+    background: #FFFFFF;
+    cursor: pointer;
+}

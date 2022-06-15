@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script async src="./scripts/index.js"></script>
     <link rel="stylesheet" href="./pages/index.css">
     <title>Место</title>
 </head>
@@ -13,64 +12,67 @@
 <body class="page">
     <div class="page__container">
         <header class="header">
-            <img src="./image/Vector.png" class="header__logo" alt="логотип место Россия">
-            <div class="header__line"></div>
+            <img src="./image/logo.svg" class="header__logo" alt="логотип место Россия">
         </header>
-        <section class="profile">
-            <div class="profile__avatar-image">
-            </div>
-            <div class="profile__info">
-                <h1 class="profile__title">Жак-Ив Кусто</h1>
-                <h2 class="profile__subtitle">Исследователь океана</h2>
-                <button class="profile__edit-button"></button>
-            </div>
-            <button class="profile__add-button"></button>
-        </section>
-        <section class="places">
-            <div class="place">
-                <img src="./image/natalia-dmitrak-G84xEDl_Nww-unsplash.jpg" alt="Главный Храм Вооруженных сил России"
-                    class="place__pic">
-                <div class="place__desctiption">
-                    <p class="place__name">Главный Храм Вооруженных сил России</p>
-                    <img src="./image/serdze.png" alt="сердечко" class="place__like-ico">
+        <main>
+            <section class="profile">
+                <div class="profile__avatar-image" alt="Аватар" style="background-image: url(./image/Avatar.png)" ;>
                 </div>
-            </div>
-            <div class="place">
-                <img src="./image/egor-myznik-MmjIgxPjljc-unsplash.jpg" alt="Коломна" class="place__pic">
-                <div class="place__desctiption">
-                    <p class="place__name">Коломна</p>
-                    <img src="./image/serdze.png" alt="сердечко" class="place__like-ico">
+                <div class="profile__info">
+                    <div class="profile__block">
+                        <h1 class="profile__title">Жак-Ив Кусто</h1>
+                        <button type="button" class="profile__edit-button"></button>
+                    </div>
+                    <p class="profile__subtitle">Исследователь океана</p>
                 </div>
-            </div>
-            <div class="place">
-                <img src="./image/andrey-che-PgMtWubirrg-unsplash.jpg" alt="Севастополь" class="place__pic">
-                <div class="place__desctiption">
-                    <p class="place__name">Севастополь</p>
-                    <img src="./image/serdze.png" alt="сердечко" class="place__like-ico">
-                </div>
-            </div>
-            <div class="place">
-                <img src="./image/max-shilov-xCquG7Sj77o-unsplash.jpg" alt="Ростов-на-Дону" class="place__pic">
-                <div class="place__desctiption">
-                    <p class="place__name">Ростов-на-Дону</p>
-                    <img src="./image/serdze.png" alt="сердечко" class="place__like-ico">
-                </div>
-            </div>
-            <div class="place">
-                <img src="./image/grigory-wH8S1RmtU9Q-unsplash.jpg" alt="Горы" class="place__pic">
-                <div class="place__desctiption">
-                    <p class="place__name">Эльбрус</p>
-                    <img src="./image/serdze.png" alt="сердечко" class="place__like-ico">
-                </div>
-            </div>
-            <div class="place">
-                <img src="./image/suleyman-naumov-2tbvB4G8Pss-unsplash.jpg" alt="Белка" class="place__pic">
-                <div class="place__desctiption">
-                    <p class="place__name">Царицыно</p>
-                    <img src="./image/serdze.png" alt="сердечко" class="place__like-ico">
-                </div>
-            </div>
-        </section>
+                <button type="button" class="profile__add-button"></button>
+            </section>
+            <section class="places">
+                <article class="place">
+                    <img src="./image/natalia-dmitrak-G84xEDl_Nww-unsplash.jpg"
+                        alt="Главный Храм Вооруженных сил России" class="place__pic">
+                    <div class="place__desctiption">
+                        <h2 class="place__name">Главный Храм Вооруженных сил России</h2>
+                        <button type="button" class="place__like-ico"></button>
+                    </div>
+                </article>
+                <article class="place">
+                    <img src="./image/egor-myznik-MmjIgxPjljc-unsplash.jpg" alt="Коломна" class="place__pic">
+                    <div class="place__desctiption">
+                        <p class="place__name">Коломна</p>
+                        <button type="button" class="place__like-ico"></button>
+                    </div>
+                </article>
+                <article class="place">
+                    <img src="./image/andrey-che-PgMtWubirrg-unsplash.jpg" alt="Севастополь" class="place__pic">
+                    <div class="place__desctiption">
+                        <p class="place__name">Севастополь</p>
+                        <button type="button" class="place__like-ico"></button>
+                    </div>
+                </article>
+                <article class="place">
+                    <img src="./image/max-shilov-xCquG7Sj77o-unsplash.jpg" alt="Ростов-на-Дону" class="place__pic">
+                    <div class="place__desctiption">
+                        <p class="place__name">Ростов-на-Дону</p>
+                        <button type="button" class="place__like-ico"></button>
+                    </div>
+                </article>
+                <article class="place">
+                    <img src="./image/grigory-wH8S1RmtU9Q-unsplash.jpg" alt="Горы" class="place__pic">
+                    <div class="place__desctiption">
+                        <p class="place__name">Эльбрус</p>
+                        <button type="button" class="place__like-ico"></button>
+                    </div>
+                </article>
+                <article class="place">
+                    <img src="./image/suleyman-naumov-2tbvB4G8Pss-unsplash.jpg" alt="Белка" class="place__pic">
+                    <div class="place__desctiption">
+                        <p class="place__name">Царицыно</p>
+                        <button type="button" class="place__like-ico"></button>
+                    </div>
+                </article>
+            </section>
+        </main>
         <footer class="footer">
             <p class="footer__content-info">© 2020 Mesto Russia</p>
         </footer>
@@ -78,17 +80,19 @@
             <!--popup_opened-->
             <div class="popup__container">
                 <h3 class="popup__title">Редактировать профиль</h3>
-                <div class="popup__form">
-                    <input type="text" placeholder="Жак-Ив Кусто" class="popup__input popup__input_text_name">
-                    <input type="text" placeholder="Исследователь океана"
+                <form name="profile" class="popup__form">
+                    <input type="text" name="name" placeholder="Жак-Ив Кусто"
+                        class="popup__input popup__input_text_name">
+                    <input type="text" name="position" placeholder="Исследователь океана"
                         class="popup__input popup__input_text_position">
-                </div>
-                <button class="popup__button">Сохранить</button>
-                <button class="popup__close-button"></button>
+                </form>
+                <button type="submit" class="popup__button">Сохранить</button>
+                <button type="button" class="popup__close-button"></button>
+                </form>
             </div>
         </div>
     </div>
-
+    <script defer src="./scripts/index.js"></script>
 </body>
 
 </html>
