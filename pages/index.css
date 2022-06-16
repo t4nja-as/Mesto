@@ -1,7 +1,6 @@
 @import url(../vendor/normalize.css);
 @import url(../fonts/fonts.css);
 @import url(../blocks/page/page.css);
-@import url(../blocks/page/__container/page__container.css);
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__logo/header__logo.css);
 @import url(../blocks/header/__line/header__line.css);
@@ -23,10 +22,10 @@
 @import url(../blocks/popup/__form/popul__form.css);
 @import url(../blocks/places/places.css);
 @import url(../blocks/places/place/place.css);
-@import url(../blocks/places/__desctiption/place__desctiption.css);
+@import url(../blocks/places/place/__desctiption/place__desctiption.css);
 @import url(../blocks/places/place/__like-ico/place__like-ico.css);
-@import url(../blocks/places/__name/place__name.css);
-@import url(../blocks/places/__pic/place__pic.css);
+@import url(../blocks/places/place/__name/place__name.css);
+@import url(../blocks/places/place/__pic/place__pic.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__content-info/footer__content-info.css);
 

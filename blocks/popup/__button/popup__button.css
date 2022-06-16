@@ -21,3 +21,11 @@
     opacity: 0.8;
     cursor: pointer;
 }
+
+@media (max-width: 320px) {
+    .popup__button {
+        margin-bottom: 23px;
+        margin-top: 43px;
+    }
+
+}

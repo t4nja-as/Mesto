@@ -9,9 +9,12 @@
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1020px) {
     .profile__info {
         max-width: 282px;
-        margin: 0;
+        margin: 0 auto;
+        padding-bottom: 4px;
+        padding-top: 22.5px;
+        
     }
 }

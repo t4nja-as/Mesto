@@ -7,4 +7,17 @@
     color: #000000;
     margin-top: 34px;
     padding-bottom: 24px;
+   
+}
+
+@media (max-width: 320px) {
+    .popup__title {
+        margin-top: 25px;
+        font-size: 18px;
+        line-height: 22px;
+        padding-bottom: 57px;
+        margin-bottom: 0;
+        
+    }
+    
 }
