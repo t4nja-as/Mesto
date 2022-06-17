@@ -1,7 +1,7 @@
 .places__like-ico {
     width: 22px;
     height: 19px;
-    background-image: url(../../../../image/сердце.svg);
+    background-image: url(../../../image/сердце.svg);
     background-position: center;
     background-repeat: no-repeat;
     flex-shrink: 0;
