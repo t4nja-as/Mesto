@@ -10,9 +10,14 @@
 
 }
 
-@media (max-width: 320px) {
+@media (max-width: 1260px) {
+    .header__logo {
+        padding-left: 27px;
+    }
+}
+
+@media (max-width: 550px) {
     .header__logo {
         max-width: 103.74px;
-        padding-left: 27px;
     }
 }

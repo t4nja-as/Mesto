@@ -1,0 +1,13 @@
+.places__gallery {
+    width: 100%;
+    max-width: 282px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+@media (max-width: 1260px) {
+    .places__gallery {
+        max-width: 100%;
+    }
+    
+}

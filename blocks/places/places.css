@@ -11,7 +11,14 @@
     margin: 0 auto;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 1260px) {
+    .places {
+        max-width: 80%;
+        gap: auto;
+    }
+}
+
+@media (max-width: 550px) {
     .places {
         max-width: 282px;
         gap: 20px;

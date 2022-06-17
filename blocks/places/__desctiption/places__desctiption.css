@@ -1,9 +1,7 @@
-.place__desctiption {
+.places__desctiption {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 31px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    padding-top: 25px;
 }

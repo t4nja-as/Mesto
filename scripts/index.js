@@ -7,10 +7,11 @@ profileEditButton.addEventListener('click', openPopup);
 popupCloseButton.addEventListener('click', closePopup);
 function openPopup() {
     popup.classList.add('popup_opened');
-
+    profileTitle.textContent = nameInput.value;
+    profileSubtitle.textContent = jobInput.value;
 }
 
-let formElement = document.querySelector('.popup__container');
+let formElement = document.querySelector('.popup__form');
 
 function formSubmitHandler(evt) {
     evt.preventDefault();
@@ -21,6 +22,7 @@ function formSubmitHandler(evt) {
 
     profileTitle.textContent = nameInput.value;
     profileSubtitle.textContent = jobInput.value;
+    popupCloseEvent();
 };
 
 function closePopup() {

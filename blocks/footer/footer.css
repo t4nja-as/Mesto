@@ -6,9 +6,8 @@
     flex-shrink: 0;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 550px) {
     .footer {
-        max-width: 282px;
-        
+        max-width: 282px;       
     }
 }
