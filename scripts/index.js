@@ -12,8 +12,8 @@ popupCloseButton.addEventListener('click', closePopup);
 
 function openPopup() {
     popup.classList.add('popup_opened');
-    profileTitle.textContent = nameInput.value;
-    profileSubtitle.textContent = jobInput.value;
+    nameInput.value = profileTitle.textContent;
+    jobInput.value = profileSubtitle.textContent;
 };
 
 let formElement = document.querySelector('.popup__form');
