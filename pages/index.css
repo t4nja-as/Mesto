@@ -27,6 +27,13 @@
 @import url(../blocks/places/places.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__content-info/footer__content-info.css);
+@import url(../blocks/popup/__filled/popup__filled.css);
+@import url(../blocks/popup/__image-description/popup__image-description.css);
+@import url(../blocks/popup/__image/popup__image.css);
+@import url(../blocks/popup/__image-title/popup__image-title.css);
+@import url(../blocks/places/__delete/places__delete.css);
+
+
 
 
 

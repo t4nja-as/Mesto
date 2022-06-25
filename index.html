@@ -27,7 +27,8 @@
             <button type="button" class="profile__add-button"></button>
         </section>
         <section class="places">
-            <article class="places__gallery">
+            <article class="places__gallery"> 
+                <button type="button" class="places__delete"></button>
                 <img src="./image/natalia-dmitrak-G84xEDl_Nww-unsplash.jpg" alt="Главный Храм Вооруженных сил России"
                     class="places__pic">
                 <div class="places__desctiption">
@@ -36,6 +37,7 @@
                 </div>
             </article>
             <article class="places__gallery">
+                <button type="button" class="places__delete"></button>
                 <img src="./image/egor-myznik-MmjIgxPjljc-unsplash.jpg" alt="Коломна" class="places__pic">
                 <div class="places__desctiption">
                     <h2 class="places__name">Коломна</h2>
@@ -43,6 +45,7 @@
                 </div>
             </article>
             <article class="places__gallery">
+                <button type="button" class="places__delete"></button>
                 <img src="./image/andrey-che-PgMtWubirrg-unsplash.jpg" alt="Севастополь" class="places__pic">
                 <div class="places__desctiption">
                     <h2 class="places__name">Севастополь</h2>
@@ -50,6 +53,7 @@
                 </div>
             </article>
             <article class="places__gallery">
+                <button type="button" class="places__delete"></button>
                 <img src="./image/max-shilov-xCquG7Sj77o-unsplash.jpg" alt="Ростов-на-Дону" class="places__pic">
                 <div class="places__desctiption">
                     <h2 class="places__name">Ростов-на-Дону</h2>
@@ -57,6 +61,7 @@
                 </div>
             </article>
             <article class="places__gallery">
+                <button type="button" class="places__delete"></button>
                 <img src="./image/grigory-wH8S1RmtU9Q-unsplash.jpg" alt="Горы" class="places__pic">
                 <div class="places__desctiption">
                     <h2 class="places__name">Эльбрус</h2>
@@ -64,12 +69,13 @@
                 </div>
             </article>
             <article class="places__gallery">
+                <button type="button" class="places__delete"></button>
                 <img src="./image/suleyman-naumov-2tbvB4G8Pss-unsplash.jpg" alt="Белка" class="places__pic">
                 <div class="places__desctiption">
                     <h2 class="places__name">Царицыно</h2>
                     <button type="button" class="places__like-ico"></button>
                 </div>
-            </article>
+            </article> 
         </section>
     </main>
     <footer class="footer">
@@ -86,10 +92,44 @@
                 <button type="submit" class="popup__button">Сохранить</button>
             </form>
             <button type="button" class="popup__close-button"></button>
-
         </div>
-    </div>
-    <script defer src="./scripts/index.js"></script>
+        <!--попап добавления-->
+        <div class="popup__places">
+            <div class="popup__container">
+                <h3 class="popup__title">Новое место</h3>
+                <form name="newCard" class="popup__form"></form>
+                <input type="text" name="name" placeholder="Название" class="popup__input popup__input_placename">
+                <input type="text" name="field" placeholder="Ссылка на картинку"
+                    class="popup__input popup__input_field">
+                <button type="submit" class="popup__button">Создать</button>
+                </form>
+                <button type="button" class="popup__close-button"></button>
+            </div>
+        </div>
+        <!--попап открытия картинки-->
+        <div class="popup__newcards">
+            <div class="popup__filled">
+                <div class="popup__image-description">
+                    <img class="popup__image" src="#" ait="картинка места в России">
+                    <p class="popup__image-title"></p>
+                    <button type="button" class="popup__close-button"></button>
+                </div>
+            </div>
+        </div>
+
+        <template id="places-template">
+            <article class="places__gallery">
+                <button type="button" class="places__delete"></button>
+                <img class="places__pic">
+                <div class="places__desctiption">
+                    <h2 class="places__name"></h2>
+                    <button type="button" class="places__like-ico"></button>
+                </div>
+            </article>
+        </template>
+
+
+        <script defer src="./scripts/index.js"></script>
 </body>
 
 </html>

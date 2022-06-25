@@ -1,0 +1,18 @@
+.places__delete {
+    background-image: url(../../../image/корзина.svg);
+    width: 18px;
+    height: 19px;
+    position: absolute;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    border: 0;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 244px;
+}
+
+.places__delete:hover {
+    opacity: 0.6;
+}

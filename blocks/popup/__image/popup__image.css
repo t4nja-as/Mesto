@@ -1,0 +1,8 @@
+.popup__image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%, contain;
+    background: url("../../../image/andrey-che-PgMtWubirrg-unsplash.jpg");
+    max-width: 816px;
+    max-height: 540px;
+}
