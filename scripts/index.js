@@ -99,7 +99,11 @@ function renderCard({ name, link }) {
     placesElement.querySelector('.places__pic').src = link;
     placesContainer.prepend(placesElement);
     setEventListeners(placesElement);
-}
+    placesElement.querySelector('.places__like-ico').addEventListener('click', function (evt) {
+    evt.target.classList.toggle('places__like-ico-activ'); 
+    });
+
+};
 
 render();
 
@@ -113,4 +117,8 @@ function setEventListeners(placesElement) {
     const deleteButton = placesElement.querySelector('.places__delete');
     deleteButton.addEventListener('click',  handleDelete);
 };
+
+
+
+
 
