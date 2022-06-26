@@ -1,11 +1,11 @@
 const profileEditButton = document.querySelector('.profile__edit-button');
-const popup = document.querySelector('.popup');
 const popupCloseButton = document.querySelector('.popup__close-button');
 const profileAddButton = document.querySelector('.profile__add-button');
-const placespic = document.querySelector('.places__pic');
+const popupClose = document.querySelector('.popup__close');
+const placespic = document.querySelector('.places')
+const popupCloseButtonplaces = document.querySelector('.popup__close-button-places');
 
-const popupPlaces = document.querySelector('.popup__places');
-
+const popup = document.querySelector('.popup');
 
 
 
@@ -19,8 +19,8 @@ profileEditButton.addEventListener('click', openPopup);
 popupCloseButton.addEventListener('click', closePopup);
 profileAddButton.addEventListener('click', openPopup);
 placespic.addEventListener('click', openPopup);
-
-
+popupClose.addEventListener('click', closePopup);
+popupCloseButtonplaces.addEventListener('click', closePopup);
 
 
 function openPopup() {
@@ -97,7 +97,7 @@ function renderCard({ name, link }) {
     placesContainer.prepend(placesElement);
     setEventListeners(placesElement);
     placesElement.querySelector('.places__like-ico').addEventListener('click', function (evt) {
-    evt.target.classList.toggle('places__like-ico-activ'); 
+        evt.target.classList.toggle('places__like-ico-activ');
     });
 
 };
@@ -112,10 +112,11 @@ function handleDelete(evt) {
 
 function setEventListeners(placesElement) {
     const deleteButton = placesElement.querySelector('.places__delete');
-    deleteButton.addEventListener('click',  handleDelete);
+    deleteButton.addEventListener('click', handleDelete);
 };
 
 /*попап добавления картинок*/
+
 
 
 
