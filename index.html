@@ -75,7 +75,7 @@
                     <h2 class="places__name">Царицыно</h2>
                     <button type="button" class="places__like-ico places__like-ico-activ"></button>
                 </div>
-            </article> 
+            </article>             
         </section>
     </main>
     <footer class="footer">
@@ -103,19 +103,20 @@
                     class="popup__input popup__input_field">
                 <button type="submit" class="popup__button">Создать</button>
                 </form>
-                <button type="button" class="popup__close-button"></button>
+                <button type="button" class="popup__close-button popup__close-button-places"></button>
             </div>
         </div>
         <!--попап открытия картинки-->
-        <div class="popup__newcards">
-            <div class="popup__filled">
-                <div class="popup__image-description">
-                    <img class="popup__image" src="#" ait="картинка места в России">
-                    <p class="popup__image-title"></p>
-                    <button type="button" class="popup__close-button"></button>
+        <div class="popup popup_type_image">
+            <div class="popup__image-container">
+                <button type="button" class="popup__close"></button>
+                <figure class="popup__figure">
+                    <img class="popup__image">
+                    <figcaption class="popup__caption"></figcaption>
+                    </figure>
                 </div>
             </div>
-        </div>
+        
 
         <template id="places-template">
             <article class="places__gallery">

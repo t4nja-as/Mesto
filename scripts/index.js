@@ -4,13 +4,9 @@ const popupCloseButton = document.querySelector('.popup__close-button');
 const profileAddButton = document.querySelector('.profile__add-button');
 const placespic = document.querySelector('.places__pic');
 
-
 const popupPlaces = document.querySelector('.popup__places');
-const popupNewcards = document.querySelector('.popup__mewcards');
 
-const usePopup = (popup) => {
-    popup.open();
-}
+
 
 
 let profileTitle = document.querySelector('.profile__title');
@@ -23,6 +19,7 @@ profileEditButton.addEventListener('click', openPopup);
 popupCloseButton.addEventListener('click', closePopup);
 profileAddButton.addEventListener('click', openPopup);
 placespic.addEventListener('click', openPopup);
+
 
 
 
@@ -118,6 +115,7 @@ function setEventListeners(placesElement) {
     deleteButton.addEventListener('click',  handleDelete);
 };
 
+/*попап добавления картинок*/
 
 
 
