@@ -137,14 +137,7 @@ function openpopuptypeplaces() {
     openPopup(popuptypeplaces);
   };
 
- // function formSubmitHandler(evt) {
-//  evt.preventDefault();
-// popupinputplacename.textContent = nameInput.value;
-// popupinputfield.textContent = linkInput.value;
-// closePopup(popuptypeplaces);
-//};
-
-  formElement.addEventListener('submit', formSubmitHandler);
+  
 
 
 
