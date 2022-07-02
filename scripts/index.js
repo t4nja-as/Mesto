@@ -1,32 +1,44 @@
-const profileEditButton = document.querySelector('.profile__edit-button');
-const popupCloseButton = document.querySelector('.popup__close-button');
-const profileAddButton = document.querySelector('.profile__add-button');
-const popupClose = document.querySelector('.popup__close');
-const placespic = document.querySelector('.places')
-const popupCloseButtonplaces = document.querySelector('.popup__close-button-places');
-
-const popup = document.querySelector('.popup');
-
-
+const places = document.querySelector('.places__pic');
 
 let profileTitle = document.querySelector('.profile__title');
 let profileSubtitle = document.querySelector('.profile__subtitle');
 let nameInput = document.querySelector('.popup__input_text_name');
 let jobInput = document.querySelector('.popup__input_text_position');
 
+const profileEditButton = document.querySelector('.profile__edit-button');
+const profileAddButton = document.querySelector('.profile__add-button');
 
-profileEditButton.addEventListener('click', openPopup);
-popupCloseButton.addEventListener('click', closePopup);
-profileAddButton.addEventListener('click', openPopup);
-placespic.addEventListener('click', openPopup);
-popupClose.addEventListener('click', closePopup);
-popupCloseButtonplaces.addEventListener('click', closePopup);
+const popuptypeplaces = document.querySelector('.popup_type_places');
+const popuptypeimage = document.querySelector('.popup_type_image');
+const popuptypeprofile = document.querySelector('.popup_type_profile');
 
+popupUser = popuptypeplaces;
+popupUser = popuptypeimage;
+popupUser = popuptypeprofile;
 
-function openPopup() {
-    popup.classList.add('popup_opened');
-    nameInput.value = profileTitle.textContent;
-    jobInput.value = profileSubtitle.textContent;
+function openPopup(popupUser) {
+    popupUser.classList.add('popup_opened');
+   
+};
+
+profileEditButton.addEventListener('click', () => {openPopup(popuptypeprofile)});
+profileAddButton.addEventListener('click', () => {openPopup(popuptypeplaces)});
+//placespic.addEventListener('click', () => {openPupop(popuptypeimage)});
+
+function closePopup(popupUser) {
+    popupUser.classList.remove('popup_opened')
+};
+const closeButtons = document.querySelectorAll('.popup__close-button');
+closeButtons.forEach((button) => {
+    const popupUser = button.closest('.popup');
+    button.addEventListener('click', () => {closePopup(popupUser)});
+});
+
+function openpopuptypeprofile() {
+nameInput.value = profileTitle.textContent;
+jobInput.value = profileSubtitle.textContent;
+popupprofileValidator.resetValidation();
+openPopup(profileEditButton);
 };
 
 let formElement = document.querySelector('.popup__form');
@@ -35,13 +47,8 @@ function formSubmitHandler(evt) {
     evt.preventDefault();
     profileTitle.textContent = nameInput.value;
     profileSubtitle.textContent = jobInput.value;
-    closePopup()
+    closePopup(popuptypeprofile);
 };
-
-function closePopup() {
-    popup.classList.remove('popup_opened')
-};
-
 formElement.addEventListener('submit', formSubmitHandler);
 
 
@@ -97,7 +104,7 @@ function renderCard({ name, link }) {
     placesContainer.prepend(placesElement);
     setEventListeners(placesElement);
     placesElement.querySelector('.places__like-ico').addEventListener('click', function (evt) {
-        evt.target.classList.toggle('places__like-ico-activ');
+    evt.target.classList.toggle('places__like-ico-activ');
     });
 
 };
@@ -115,7 +122,40 @@ function setEventListeners(placesElement) {
     deleteButton.addEventListener('click', handleDelete);
 };
 
-/*попап добавления картинок*/
+/*попап просмотр изображений*/
+function handlePreviewImage(link, name) {
+    popuptypeimage.src = link;
+    popuptypeimage.alt = name;
+    popupCaption.textContent = name;
+    openPopup(popuptypeimage);
+
+}
+/*попап добавление карточек*/
+function openpopuptypeplaces() {
+    formElement.reset()
+    puptypeplacesValidator.resetValidation();
+    openPopup(popuptypeplaces);
+  };
+
+ // function formSubmitHandler(evt) {
+//  evt.preventDefault();
+// popupinputplacename.textContent = nameInput.value;
+// popupinputfield.textContent = linkInput.value;
+// closePopup(popuptypeplaces);
+//};
+
+  formElement.addEventListener('submit', formSubmitHandler);
+
+
+
+
+
+
+    
+
+
+
+
 
 
 
